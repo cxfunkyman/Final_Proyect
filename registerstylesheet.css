@@ -1,0 +1,172 @@
+/*----------------------------------------------------------*/
+/*--- Assignment 2---*/  
+/*---  Written by: Carolina Torres Restrepo - 2195431 ---*/  
+/*---  Written by: Seky Leonardo Perez Moya -  ---*/ 
+/*--- For “Front-End Web Programming” Section 05807 - Winter 2022 ---*/ 
+/*----------------------------------------------------------*/
+
+* {
+ box-sizing: border-box;
+}
+
+/* Style the body */
+body {
+ font-family: Verdana, sans-serif;;
+ margin: 0;
+}
+
+p {
+  text-align: justify;
+  font-size: 14px;
+  color: #202D79;
+}
+
+h1 {
+  text-align: center;
+  font-size: 40px;
+  color: #ffffff;
+}
+h4{
+  text-align: center;
+}
+/* Header title */
+ .headerregister {
+  padding: 120px;
+  text-align: center;
+  color: #fff;
+  background-image: url(register.png);
+     background-size: 100% 100%;
+     font-size: 90%;
+     min-height: 300px;
+ }
+
+/* Increase the font size of the heading */
+.header h1 {
+ font-size: 40px;
+}
+/*-------------------------------------------------------------------------------*/
+/* Navbar */
+.navbar {
+ overflow: hidden;
+ background-color: #202D79;
+ top: 0;
+}
+/* Style the navigation bar link */
+.navbar a {
+padding: 5px;
+ display: block;
+ color: #ffffff;
+ text-align: center;
+ text-decoration: none;
+}
+/* Right-aligned menu */
+.navbar a.right {
+ float: right;
+}
+/* Change color on hover */
+.navbar a:hover {
+ color: #fcaf20;
+}
+/* Navigation bar social media icons */
+#socmed {
+  display: inline-block !important;
+  float: left !important;
+  }
+  #menu {
+    display: inline-block !important;
+    float: right !important;
+    padding: 13px;
+    }
+/*-------------------------------------------------------------------------------*/
+
+   /* Home banner button */
+    .btn {
+      border: none;
+      border-radius: 5px;
+      background-color: #fcaf20;
+      color: #ffffff;
+      padding: 15px 32px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      margin: 4px 2px;
+      cursor: pointer;
+    }
+    .btn:hover {
+      background-color: #e9e9e9;
+      color: gray;
+    }
+
+/*-------------------------------------------------------------------------------*/
+/* Registration Form */ 
+form { 
+  /* width: 100%; */
+  border: 3px solid #fcaf20;
+ padding-left: 110px;
+  margin: 0 auto;
+  width: 600px;
+}
+ 
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #202D79;
+  color: white;
+  text-decoration: none;
+ }
+ .footnav a:hover {
+  color: #fcaf20;
+ }
+ .footnav a {
+  color: rgb(190, 184, 184);
+  text-decoration: none;
+ }
+/*-------------------------------------------------------------------------------*/
+
+  /* Responsive layout - when the screen is less than 499px wide, make the navigation links stack on top of each other instead of next to each other */
+  @media screen and (max-width: 499px) {
+    .navbar a {
+      float: none;
+      width: 100%;
+    }
+    .headerregister {
+      padding: 10px;
+     }
+     form { 
+      /* width: 100%; */
+      border: 3px solid #fcaf20;
+     padding-left: 5px;
+      margin: 0 auto;
+      width: 300px;
+    }
+    .textsize input{
+      width: 98%;
+    }
+    textarea{
+      width: 98%;
+    }
+   }
+  /* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+  @media screen and (min-width: 500px) and (max-width: 767px) {
+    .row {   
+      flex-direction: column;
+    }
+    form { 
+      /* width: 100%; */
+      border: 3px solid #fcaf20;
+     padding-left: 5px;
+      margin: 0 auto;
+      width: 450px;
+    }
+    .textsize input{
+      width: 98%;
+    }
+    textarea{
+      width: 98%;
+    }
+   }
+   @media only screen and (min-width: 768px) and (max-width: 1035px) {
+  
+  } 

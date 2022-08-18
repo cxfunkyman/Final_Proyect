@@ -1,0 +1,82 @@
+<!---------------------------------------------------------->
+<!--- Final Project --->
+<!---  Written by: Carolina Torres Restrepo - 2195431 --->
+<!---  Written by: Seky Leonardy Perez Moya - 2195412 --->
+<!--- For “Front-End Web Programming” Section 05807 - Winter 2022 --->
+<!---------------------------------------------------------->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Contact</title>
+  <link rel="stylesheet" href="stylesheet.css">
+  <!-- Add icon library -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+  <div class="navbar">
+    <!-- Menu -->
+    <ul class="nav navbar navbar-nav navbar-right pull-right">
+      <li id="menu"></li><a href="contact.html" class="right">Contact</a>
+      <li id="menu"></li><a href="programs.html" class="right">Programs</a>
+      <li id="menu"></li><a href="about.html" class="right">About</a>
+      <li id="menu"></li><a href="index.html" class="right">Home</a>
+    </ul>
+
+    <!-- Small social media icon -->
+    <ul class="nav navbar navbar-nav navbar-left pull-left">
+      <li id="socmed"><a href="https://ca.linkedin.com/" target="_blank" class="fa fa-linkedin fa-lg"></a></li>
+    </ul>
+  </div>
+  <div class="headercontact">
+    <h1>Contact Us</h1>
+    <h2><b>Do You Want To Know More About Central College?</b></h2>
+    <button class="btn btn-success" onclick=" window.open('about.html', '_self')">Read Here!</button>
+  </div>
+  <br>
+  <h2 style="text-align: center; color: #fcaf20; font-size: 30px;">CONTACT FORM</h2>
+  <br>
+  <div>
+    <h5 style="text-align: center; color: #202D79;">Fill out the next form to apply for our Fall 2022 programs:</h5>
+    <br>
+    <div class="formcontainercontac">
+    <div class="contactformcontainer">
+      <!-- <form action="/action_page.php"> -->
+
+      <form name ="ContForm" action="" 
+      onsubmit="return ContactForm()" method="">
+
+        <label for="fname">First Name</label>
+        <input type="text" id="fname" name="firstname" >
+    
+        <label for="lname">Last Name</label>
+        <input type="text" id="lname" name="lastname" >
+
+        <label for="Email">Email</label>
+        <input type="text" id="Email" name="email" >
+    
+        <label for="subject">Subject</label>
+        <textarea id="subject" name="subject"  style="height:200px"></textarea>
+    
+        <input type="submit" 
+        value="Submit" name="Submit" />
+      </form>
+    </div>
+  </div>
+    </div>
+  </div>
+<br>
+<br>
+  <div class="footer">
+    Copyright &copy; 2022 Central College<br>
+    <div class = footnav>
+      <a href ="mailto:hello@centralcollege.com">hello@centralcollege.com</a>
+    </div>
+  </div>
+  <script src="register.js"></script>
+</body>
+
+</html>

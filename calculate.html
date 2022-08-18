@@ -1,0 +1,118 @@
+<!---------------------------------------------------------->
+<!--- Final Project --->
+<!---  Written by: Carolina Torres Restrepo - 2195431 --->
+<!---  Written by: Seky Leonardy Perez Moya - 2195412 --->
+<!--- For “Front-End Web Programming” Section 05807 - Winter 2022 --->
+<!---------------------------------------------------------->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Calculate</title>
+  <link rel="stylesheet" href="calculate.css">
+  <!-- Add icon library -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+  <div class="navbar">
+    <!-- Menu -->
+    <ul class="nav navbar navbar-nav navbar-right pull-right">
+      <li id="menu"></li><a href="contact.html" class="right">Contact</a>
+      <li id="menu"></li><a href="programs.html" class="right">Programs</a>
+      <li id="menu"></li><a href="about.html" class="right">About</a>
+      <li id="menu"></li><a href="index.html" class="right">Home</a>
+    </ul>
+
+    <!-- Small social media icon -->
+    <ul class="nav navbar navbar-nav navbar-left pull-left">
+      <li id="socmed"><a href="https://ca.linkedin.com/" target="_blank" class="fa fa-linkedin fa-lg"></a></li>
+    </ul>
+  </div>
+  <div class="headercalculate">
+    <h1>Calculate Your College Expenses</h1>
+    <h2><b>Do You Want To Talk With One Of Our Advisors?</b></h2>
+    <button class="btn btn-success" onclick=" window.open('contact.html', '_self')">Contact Us!</button>
+  </div>
+  <br>
+  <h2 class="h2style">CALCULATE FORM</h2>
+
+  <div>
+    <h5 style="text-align: center; color: #202D79;">Fill out the form and calculate yout total expenses for the program choosen:</h5>
+  
+           <!-- Table -->
+           <center><table>
+            <br>            
+          <tr>
+            <th class="table1">Program</th>
+            <th class="table2">Semester Fee</th>
+            <th class="table3">Class Books</th>
+          </tr>
+          <tr>
+            <td>Computer Science and Mathematics</td>
+          <td>$1350</td>
+          <td>$100</td>
+          </tr>
+          <tr>
+             <td>Health Science</td>
+          <td>$1295</td>
+          <td>$120</td>
+          </tr>
+          <tr> 
+            <td>Internet & Digital Marketing</td>
+            <td>$1820</td>
+            <td>$150</td>
+          </tr>
+          <tr> 
+            <td>Office Systems & Accounting (Payroll)</td>
+            <td>$950</td>
+            <td>$135</td>
+          </tr>
+          </table></center>
+          <br>
+          <br>
+
+     <!-- Form -->
+    <fieldset>
+      <legend>Chose Your Program:</legend>
+      <div class="radios">                                                 
+      <input type="radio" id="radio1" name="Program" value="Computer Science and Mathematics"> Computer Science and Mathematics<br>
+      <input type="radio" id="radio2" name="Program" value="Health Science"> Health Science<br>     
+      <input type="radio" id="radio3" name="Program" value="Internet & Digital Marketing"> Internet & Digital Marketing<br> 
+      <input type="radio" id="radio4" name="Program" value="Office Systems & Accounting (Payroll)"> Office Systems & Accounting (Payroll)<br>      
+      </div>
+      </fieldset>
+    <br>
+    <center><div>
+      <input type="checkbox" id="book" name="book"
+             checked>
+      <label for="book">Basic Book (optional)</label>
+    </div></center>
+    <center><div>
+      <input type="checkbox" id="taxes" name="taxes"
+             checked>
+      <label for="taxes">Tax Include (%15)</label>
+    </div></center>
+    <br>
+    <p id="paragraph">An administration fee of $22 and inscription fee of $90 is included in this form.</p>
+    <br>
+    <center><button id="button" type="button" name="calculate" onclick="calculate()">Calculate</button></center>
+      <br>
+
+     <center style="color: #202D79;">Total Semester Expenses: <input id="fee" type="text" name="fee" ></center>
+     
+    </div>
+  </div>
+<br>
+<br>
+  <div class="footer">
+    Copyright &copy; 2022 Central College<br>
+    <div class = footnav>
+      <a href ="mailto:hello@centralcollege.com">hello@centralcollege.com</a>
+    </div>
+  </div>
+  <script src="calculate.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,114 @@
+<!---------------------------------------------------------->
+<!--- Final Project --->
+<!---  Written by: Carolina Torres Restrepo - 2195431 --->
+<!---  Written by: Seky Leonardy Perez Moya - 2195412 --->
+<!--- For “Front-End Web Programming” Section 05807 - Winter 2022 --->
+<!---------------------------------------------------------->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Register</title>
+  <link rel="stylesheet" href="registerstylesheet.css">
+  <!-- Add icon library -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+  <div class="navbar">
+    <!-- Menu -->
+    <ul class="nav navbar navbar-nav navbar-right pull-right">
+      <li id="menu"></li><a href="contact.html" class="right">Contact</a>
+      <li id="menu"></li><a href="programs.html" class="right">Programs</a>
+      <li id="menu"></li><a href="about.html" class="right">About</a>
+      <li id="menu"></li><a href="index.html" class="right">Home</a>
+    </ul>
+
+    <!-- Small social media icon -->
+    <ul class="nav navbar navbar-nav navbar-left pull-left">
+      <li id="socmed"><a href="http://www.linkedin.com/in/" target="_blank" class="fa fa-linkedin fa-lg"></a></li>
+    </ul>
+  </div>
+  <div class="headerregister">
+    <h1>Register</h1>
+    <h2><b>Still Not Sure On What To Study?</b></h2>
+    <button class="btn btn-success" onclick=" window.open('contact.html', '_self')">We Can Help You!</button>
+  </div>
+  <br>
+  <h2 style="text-align: center; color: #fcaf20; font-size: 30px;">REGISTRATION FORM</h2>
+  <br>
+  <div>
+    <h4>Fill out the next form to apply for our Fall 2022 programs:</h4>
+    <br>
+  <form name ="RegForm" action="" 
+  onsubmit="return RegistrationForm()" method="">
+  
+  <br>
+  <div class="textsize">
+<p>Name: 
+  <br>
+  <br><input type="text" 
+                size="50" name="Name" /></p>
+<br />
+<p>Address: 
+  <br>
+  <br><input type="text" 
+                   size="50" name="Address" />
+</p>
+<br />
+<p>E-mail: 
+  <br>
+  <br><input type="text" 
+                size="50" name="EMail" /></p>
+<br />
+<p>Password: 
+  <br>
+  <br><input type="text" 
+             size="50" name="Password" /></p>
+<br />
+<p>Telephone: 
+  <br>
+  <br><input type="text" 
+            size="50" name="Telephone" /></p>
+<br />
+</div>
+<p>
+    Select Your Program: 
+</p>
+<select type="text" value="" name="Subject">
+  <option>Computer Science and Mathematics</option>
+  <option>Health Science</option>
+  <option>Internet & Digital Marketing</option>
+  <option>Office Systems & Accounting (Payroll)</option>
+</select>
+<br />
+<br />
+<p>Comments: 
+  <br>
+  <br><textarea cols="50" 
+                  name="Comment"> </textarea></p>
+<p>
+  <br>
+    <input type="submit" 
+           value="send" name="Submit" />
+    <input type="reset" 
+           value="Reset" name="Reset" />
+</p>
+</form>
+</div>
+    </div>
+  </div>
+<br>
+<br>
+  <div class="footer">
+    Copyright &copy; 2022 Central College<br>
+    <div class = footnav>
+      <a href ="mailto:hello@centralcollege.com">hello@centralcollege.com</a>
+    </div>
+  </div>
+  <script src="register.js"></script>
+</body>
+
+</html>

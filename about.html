@@ -1,0 +1,109 @@
+<!---------------------------------------------------------->
+<!--- Final Project --->
+<!---  Written by: Carolina Torres Restrepo - 2195431 --->
+<!---  Written by: Seky Leonardy Perez Moya - 2195412 --->
+<!--- For “Front-End Web Programming” Section 05807 - Winter 2022 --->
+<!---------------------------------------------------------->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>About</title>
+  <link rel="stylesheet" href="stylesheet.css">
+  <!-- Add icon library -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+    <!-- Alert Message -->
+  <div class ="alert info">
+    <span class="closebtn">&times;</span>  
+    <strong>ATTENTION!</strong> Inscriptions For Our Fall 2022 Programs Are Open. Register Now!
+  </div>
+  <div class="navbar">
+    <!-- Menu -->
+    <ul class="nav navbar navbar-nav navbar-right pull-right">
+      <li id="menu"></li><a href="contact.html" class="right">Contact</a>
+      <li id="menu"></li><a href="programs.html" class="right">Programs</a>
+      <li id="menu"></li><a href="about.html" class="right">About</a>
+      <li id="menu"></li><a href="index.html" class="right">Home</a>
+    </ul>
+
+    <!-- Small social media icon -->
+    <ul class="nav navbar navbar-nav navbar-left pull-left">
+      <li id="socmed"><a href="https://ca.linkedin.com/" target="_blank" class="fa fa-linkedin fa-lg"></a></li>
+    </ul>
+  </div>
+  <div class="headerabout">
+    <h1>About Central College</h1>
+    <h2><b>Do You Want To Join Us?</b></h2>
+    <button class="btn btn-success" onclick=" window.open('programs.html', '_self')">Check Our Programs!</button>
+  </div>
+  <div class="twocolumns">
+    <div class="leftside">
+         <!-- Clock-->
+         <h2 style="text-align: center; color: #fcaf20; font-size: 30px;">Current Time:</h2>
+         <div id = "digital-clock"></div>
+         <br>
+         <br>
+         <br>
+
+             <!-- Horizontal bar CTA -->
+        <div style="background-color:#fcaf20;color: white;padding:30px 30px 40px; text-align: center;"><strong>Still not sure about what path to choose?</strong>
+        <br><br><button style="background-color: #202D79;" class="btn btn-success"
+          onclick=" window.open('contact.html', '_self')">Tell Us Your Question!</button>
+      </div>
+
+<!-- Quote of the day -->
+<br>
+      <h2 style="text-align: center; color: #fcaf20; font-size: 30px;">Quote Of The Day:</h2>
+      
+      <div class="container">
+        <div class="quote-box">
+          <div class="quote">
+            <blockquote>
+              "The secret of getting ahead is getting started. The secret of getting started is breaking your complex overwhelming tasks into small manageable tasks, and starting on the first one."
+            </blockquote>
+          </div>
+          <div class="name">
+            Mark Twain
+          </div>
+        </div>
+      </div>
+
+
+    </div>
+    <div class="rightmain2">
+     
+        <h2 style="text-align: center; color: #fcaf20; font-size: 30px;">ABOUT CENTRAL COLLEGE</h2>
+        <h4>Central College is a publicly-funded English language CEGEP located in Montreal. Built in honour of a Canadian soldier, diplomat and former Governor General of Canada, Central College opened its doors on September 8, 1970 welcoming close to 1,400 students in its first cohort. The Central College Crest is an adaptation of the Central family Coat of Arms.
+
+        </h4>
+        <br>
+        <h2 style="text-align: center; color: #fcaf20; font-size: 30px;">THE CENTRAL COLLEGE CAMPUS</h2>
+        <h4>Situated on an oasis of green in the Borough of Saint-Laurent, of the City of Montreal, Central College occupies property and buildings purchased by the government from the Soeurs de Sainte-Croix who previously operated a convent (Couvent Notre-Dame-des-Anges) and a private women’s college (Collège Basile-Moreau) in the location. These buildings have undergone considerable renovations over the years to accommodate the changing needs of post secondary education.</h4>
+        <br>
+        <div align="center">
+        <iframe class="videoframe" width="860" height="515" src="https://www.youtube.com/embed/njiyopwBrfw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+        <br>
+        <h2 style="text-align: center; color: #fcaf20; font-size: 30px;">CAREER AND PRE-UNIVERSITY PROGRAMS</h2>
+        <h4>Central College continues to offer full time pre-university programs and technical career programs leading to a Diploma of College Studies (DCS), while the Continuing Education Department offers credit DCS courses and Attestation of College Studies (ACS) programs, as well as non credit courses and programs.</h4>
+        <br>
+
+
+    </div>
+  </div>
+
+  <div class="footer">
+    Copyright &copy; 2022 Central College<br>
+    <div class = footnav>
+      <a href ="mailto:hello@centralcollege.com">hello@centralcollege.com</a>
+    </div>
+  </div>
+  <script src="about.js"></script>
+</body>
+
+</html>
